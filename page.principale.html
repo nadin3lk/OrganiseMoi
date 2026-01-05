@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OrganiseMoi</title>
+  <link rel="icon" type="image/jpg" href="favicon.jpg">
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+<img src="studio-ghibli-cartoon-characters-walking-with-umbrella-and-leaves-PK3sKWfK_t.png" class="calcifer" style="
+width: 100px;
+margin-right: 580px;
+margin-left: 30px;
+margin-top: 5px;
+">
+
+<h1 style="
+color: rgb(63, 116, 173);
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto';
+margin-left: 135px;
+margin-top: -40px;
+">OrganiseMoi</h1>
+
+<button class="dark-btn">🌙</button>
+
+<hr style=" 
+border: none; 
+height: 1px; 
+border-color: rgb(229, 226, 226); 
+border-radius: 8px; 
+margin: 20px 0; 
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);  
+"> 
+
+</header>
+
+<br>
+
+<!-------  CALENDAR     -------->
+<div class="main-layout">
+<div class="calendar">
+  <div class="calendar-header">
+    <h1 style="font-size: large; margin-left: 20px;">📅 Calendrier</h1>
+
+    <div class="calendar-header-2">
+      <button id="prevBtn"><</button>
+      <div class="monthYear" id="monthYear"></div>
+      <button id="nextBtn">></button>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="days">
+    <div class="day">Lun</div>
+    <div class="day">Mar</div>
+    <div class="day">Mer</div>
+    <div class="day">Jeu</div>
+    <div class="day">Ven</div>
+    <div class="day">Sam</div>
+    <div class="day">Dim</div>
+  </div>
+
+  <div class="dates" id="dates"></div>
+
+  <br>
+  <br>
+
+  <hr style=" 
+border: 1.4px solid rgba(245, 184, 199, 0.899); 
+width: 100%; margin-top: -15px; 
+"> 
+
+  <div style="margin-top:5px;">
+    <h3>📌 Importants</h3>
+    <ul id="calendar-task-list"></ul>
+  </div>
+</div>
+
+<!------- TO-DO -------->
+<div class="right-column">
+<div class="container"> 
+  <div class="todo-app">
+
+    <h1>📝 À Faire</h1>
+
+    <div class="stat-container">
+      <div class="details">
+        <h3>Lâche pas!</h3>
+        <div id="progressbar"><div id="progress"></div></div>
+      </div>
+      <div class="stats-number">
+        <p id="numbers">0 / 0</p>
+      </div>
+    </div>
+
+    <form class="input-area">
+      <input type="text" id="task-input" placeholder="Ajoute une nouvelle tâche...">
+
+      <button type="button" id="add-task-btn">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+
+      <button type="button" id="add-calendar-task-btn" title="Ajouter au calendrier">
+        📅
+      </button>
+    </form>
+
+    <div class="todos-container">
+      <ul id="task-list"></ul>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
+<br>
+<!------- POMODORO -------->
+
+<div class="pomodoro-container">
+  <h1 class="title">⏱️ Pomodoro</h1>
+  <hr style=" 
+border: 1.6px solid rgba(245, 184, 199, 0.899); 
+width: 100%; margin-top: -15px; 
+"> 
+  <p class="timer" id="timer" style="margin-top: 8px;">25:00</p>
+
+  <div class="button-wrapper">
+    <button class="startBtn" id="start">Démarrer</button>
+    <button class="stopBtn" id="stop">Stop</button>
+    <button class="resetBtn" id="reset">Rénitialiser</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</body>
+</html>
