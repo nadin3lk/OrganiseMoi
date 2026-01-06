@@ -218,6 +218,36 @@ body.dark .calendar {
   color: white; 
 } 
 
+#calendar-task-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 8px;
+}
+
+#calendar-task-list li {
+  background: rgba(154, 230, 180, 0.45); 
+  color: #065f46;
+  padding: 10px 14px;
+  margin-bottom: 8px;
+  border-radius: 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  animation: fadeIn 0.25s ease-in-out;
+}
+
+#calendar-task-list li::before {
+  content: "•";
+  color: #10b981;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+body.dark #calendar-task-list li {
+  background: rgba(52, 211, 153, 0.35);
+  color: #ecfdf5;
+}
 
 
 
@@ -543,5 +573,6 @@ body.dark .pomodoro-container {
   transition: 0.2s ease-in-out; 
   background-color: #6366f1; 
 } 
+
 
  
